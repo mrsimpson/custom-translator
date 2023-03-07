@@ -1,14 +1,14 @@
-import { GOOGLE_COM, BING_COM } from './translateSource';
 import { LANG_EN } from './langCode';
 import { styleVarsList } from './defaultStyleVars';
 import { defaultContextMenus } from './contextMenusIds';
 import { DefaultOptions } from '../types';
 import { defaultTranslateButtons } from './translateButtonTypes';
 import { initSourceParams } from './sourceParams';
+import { getCorporateSource, getCorporateSourceId, getCorporateWebpageSource, getCorporateWebpageSourceId } from '../corporate/translateSources';
 
 const defaultOptions: DefaultOptions = {
     userLanguage: LANG_EN,
-    defaultTranslateSource: GOOGLE_COM,
+    defaultTranslateSource: getCorporateSourceId(),
     defaultTranslateFrom: '',
     defaultTranslateTo: '',
     translateDirectly: false,
@@ -16,11 +16,11 @@ const defaultOptions: DefaultOptions = {
     translateHostList: [],
     historyBlackListMode: false,
     historyHostList: [],
-    defaultAudioSource: GOOGLE_COM,
+    defaultAudioSource: '',
     translateWithKeyPress: false,
     useDotCn: false,
     multipleTranslateMode: false,
-    multipleTranslateSourceList: [GOOGLE_COM, BING_COM],
+    multipleTranslateSourceList: [],
     multipleTranslateFrom: '',
     multipleTranslateTo: '',
     enablePdfViewer: false,
@@ -58,7 +58,7 @@ const defaultOptions: DefaultOptions = {
     textPreprocessingPreset: { convertCamelCase: false },
     customizeStyleText: '',
     translateButtons: defaultTranslateButtons,
-    webPageTranslateSource: GOOGLE_COM,
+    webPageTranslateSource: getCorporateWebpageSourceId(),
     webPageTranslateTo: LANG_EN,
     webPageTranslateDisplayMode: 1,
     webPageTranslateDirectly: false,
@@ -66,10 +66,10 @@ const defaultOptions: DefaultOptions = {
     afterSelectingTextRegExpList: [],
     translateButtonsTL: { first: '', second: LANG_EN, third: LANG_EN },
     sourceParamsCache: initSourceParams,
-    customTranslateSourceList: [],
+    customTranslateSourceList: [getCorporateSource()],
     displayOfTranslation: { result: true, dict: true, phonetic: true, related: true, example: false, phonetic_nonEnglish: false, maintainParagraphStructure: false },
     displayModeEnhancement: { o_Hovering: false, oAndT_Underline: false, oAndT_NonDiscrete: false, t_Hovering: false },
-    customWebpageTranslateSourceList: [],
+    customWebpageTranslateSourceList: [getCorporateWebpageSource()],
     translateDynamicContent: false,
     autoTranslateWebpageHostList: [],
     enableAutoTranslateWebpage: false
