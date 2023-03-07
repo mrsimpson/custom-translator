@@ -1,16 +1,16 @@
 {
-  "name": "corporate-translator",
+  "name": "custom-translator",
   "version": "4.7.1",
   "private": true,
   "description": "Focus on providing a great inline web translation experience.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mrsimpson/corporate-translator"
+    "url": "https://github.com/mrsimpson/custom-translator"
   },
   "bugs": {
-    "url": "https://github.com/mrsimpson/corporate-translator/issues"
+    "url": "https://github.com/mrsimpson/custom-translator/issues"
   },
-  "homepage": "https://github.com/mrsimpson/corporate-translator",
+  "homepage": "https://github.com/mrsimpson/custom-translator",
   "scripts": {
     "build": "webpack --env production --config config/webpack.config.js",
     "dev": "webpack --env development --config config/webpack.config.js",

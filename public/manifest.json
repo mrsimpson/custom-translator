@@ -11,7 +11,7 @@
   },
   "manifest_version": 3,
   "minimum_chrome_version": "88",
-  "homepage_url": "https://github.com/mrsimpson/corporate-translator",
+  "homepage_url": "https://github.com/mrsimpson/custom-translator",
   "background": {
     "service_worker": "background.js"
   },
