@@ -56,10 +56,10 @@ const i18nMessage: { [P in I18nLocaleCode]: { [K in I18nMessageKey]: string; } }
     'de': {
         contextMenus_OPEN_THIS_PAGE_WITH_PDF_VIEWER: 'Diese Seite mit dem PDF-Viewer öffnen',
         contextMenus_OPEN_SEPARATE_WINDOW: 'Separates Übersetzungsfenster öffnen',
-        contextMenus_TRANSLATE_SELECTION_TEXT: 'Den ausgewählten Text übersetzen',
-        contextMenus_LISTEN_SELECTION_TEXT: 'Den ausgewählten Text anhören',
-        contextMenus_TRANSLATE_CURRENT_PAGE: 'Die aktuelle Seite übersetzen',
-        contextMenus_OPEN_COLLECTION_PAGE: 'Sammlungsseite öffnen'
+        contextMenus_TRANSLATE_SELECTION_TEXT: 'Ausgewählten Text übersetzen',
+        contextMenus_LISTEN_SELECTION_TEXT: 'Ausgewählten Text anhören',
+        contextMenus_TRANSLATE_CURRENT_PAGE: 'Aktuelle Seite übersetzen',
+        contextMenus_OPEN_COLLECTION_PAGE: 'Übersetzungs-Sammlung öffnen'
     }
 };
 const getI18nMessage = (message: I18nMessageKey) => {
