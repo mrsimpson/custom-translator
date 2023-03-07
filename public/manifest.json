@@ -1,5 +1,5 @@
 {
-  "short_name": "ScTranslator",
+  "short_name": "CorporateTranslator",
   "name": "__MSG_extName__",
   "default_locale": "en",
   "version": "4.7.1",
@@ -11,7 +11,7 @@
   },
   "manifest_version": 3,
   "minimum_chrome_version": "88",
-  "homepage_url": "https://github.com/chunibyocola/sc-translator-crx",
+  "homepage_url": "https://github.com/mrsimpson/corporate-translator",
   "background": {
     "service_worker": "background.js"
   },
@@ -60,23 +60,17 @@
       "description": "__MSG_extTogglePageTranslationStateDescription__"
     }
   },
-  "permissions": [
-    "storage",
-    "contextMenus",
-    "webRequest"
-  ],
-  "host_permissions": [
-    "<all_urls>"
-  ],
-  "content_scripts" : [
+  "permissions": ["storage", "contextMenus", "webRequest"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
       "js": ["/static/js/content.js"]
     }
   ],
-  "web_accessible_resources":[
+  "web_accessible_resources": [
     {
-      "resources": ["/pdf-vierer/web/viewer.html", "/static/css/content.css"],
+      "resources": ["/pdf-viewer/web/viewer.html", "/static/css/content.css"],
       "matches": ["http://*/*", "https://*/*"]
     }
   ],

@@ -1,16 +1,16 @@
 {
-  "name": "sc-translator-crx",
+  "name": "corporate-translator",
   "version": "4.7.1",
   "private": true,
   "description": "Focus on providing a great inline web translation experience.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chunibyocola/sc-translator-crx"
+    "url": "https://github.com/mrsimpson/corporate-translator"
   },
   "bugs": {
-    "url": "https://github.com/chunibyocola/sc-translator-crx/issues"
+    "url": "https://github.com/mrsimpson/corporate-translator/issues"
   },
-  "homepage": "https://github.com/chunibyocola/sc-translator-crx",
+  "homepage": "https://github.com/mrsimpson/corporate-translator",
   "scripts": {
     "build": "webpack --env production --config config/webpack.config.js",
     "dev": "webpack --env development --config config/webpack.config.js",
