@@ -584,7 +584,22 @@ const feedDataToPageTranslateItem = (pageTranslateItem: PageTranslateItemEnity, 
     pageTranslateItem.textNodes.forEach((textNode, i) => {
         if (!textNode.parentElement || typeof pageTranslateItem.result?.translations[i] !== 'string') { return; }
 
-        const fonts = insertResultAndWrapOriginalTextNode(textNode, pageTranslateItem.mapIndex, pageTranslateItem.result.translations[i], comparisons[i]);
+        // insert spaces if the translation engine might have stripped them
+        const translationText = pageTranslateItem.result.translations[i]
+        let paddedTranslation = translationText
+        const REGEXP_WHITESPACE_START = /^(\s)+/
+        const originalTextWhitespaceStartMatch = textNode.textContent && textNode.textContent.match(REGEXP_WHITESPACE_START)
+        if (originalTextWhitespaceStartMatch && !translationText.match(REGEXP_WHITESPACE_START)) {
+            paddedTranslation = originalTextWhitespaceStartMatch[0] + paddedTranslation
+        }
+
+        const REGEXP_WHITESPACE_END = /.*(\s)+$/
+        const originalTextWhitespaceEndMatch = textNode.textContent && textNode.textContent.match(REGEXP_WHITESPACE_END)
+        if (originalTextWhitespaceEndMatch && !translationText.match(REGEXP_WHITESPACE_END)) {
+            paddedTranslation = paddedTranslation + originalTextWhitespaceEndMatch[1]
+        }
+
+        const fonts = insertResultAndWrapOriginalTextNode(textNode, pageTranslateItem.mapIndex, paddedTranslation, comparisons[i]);
         fonts && pageTranslateItem.fontsNodes.push(fonts);
     });
 
