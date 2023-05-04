@@ -461,6 +461,9 @@
     "optionsTogglePageTranslationStateDescription": {
         "message": "拡張機能が有効なページでこのキーボードショートカットを使用すると、ページ翻訳がアクティブしない状態でアクティブにしたり、アクティブした状態で閉じたりすることができます。"
     },
+    "optionsKeepUsingDefaultAudioSource": {
+        "message": "この音声ソースを他の翻訳ソースで使用する"
+    },
     "themePreset": {
         "message": "プリセット"
     },
@@ -578,6 +581,27 @@
     "collectionConfirmingDelete": {
         "message": "チェックした項目が削除されます。"
     },
+    "collectionAddTag": {
+        "message": "タグを追加"
+    },
+    "collectionEnterTagName": {
+        "message": "ここにタグ名を入力します"
+    },
+    "collectionOtherTags": {
+        "message": "その他のタグ"
+    },
+    "collectionTags": {
+        "message": "タグ"
+    },
+    "collectionManageTags": {
+        "message": "タグの管理"
+    },
+    "collectionTargetTag": {
+        "message": "ターゲットタグ"
+    },
+    "collectionConfirmRemoveTag": {
+        "message": "このタグは、次のアイテムから削除されます。"
+    },
     "wordTranslate": {
         "message": "翻訳"
     },
@@ -622,6 +646,12 @@
     },
     "wordConfirm": {
         "message": "確認"
+    },
+    "wordAdd": {
+        "message": "追加"
+    },
+    "wordSearch": {
+        "message": "検索"
     },
     "sentenceAddTranslateSource": {
         "message": "翻訳ソースを追加してください。"

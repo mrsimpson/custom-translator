@@ -461,6 +461,9 @@
     "optionsTogglePageTranslationStateDescription": {
         "message": "When this keyboard shortcut is used on an extension enabled page, you can activate page translation while it is not activated, or close it while it is activated."
     },
+    "optionsKeepUsingDefaultAudioSource": {
+        "message": "Use this audio source in other translation sources"
+    },
     "themePreset": {
         "message": "Preset"
     },
@@ -578,6 +581,27 @@
     "collectionConfirmingDelete": {
         "message": "The checked items will be deleted."
     },
+    "collectionAddTag": {
+        "message": "Add tag"
+    },
+    "collectionEnterTagName": {
+        "message": "Enter the tag name here"
+    },
+    "collectionOtherTags": {
+        "message": "Other Tags"
+    },
+    "collectionTags": {
+        "message": "Tags"
+    },
+    "collectionManageTags": {
+        "message": "Manage Tags"
+    },
+    "collectionTargetTag": {
+        "message": "Target Tag"
+    },
+    "collectionConfirmRemoveTag": {
+        "message": "This tag will be removed from the following items."
+    },
     "wordTranslate": {
         "message": "Translate"
     },
@@ -622,6 +646,12 @@
     },
     "wordConfirm": {
         "message": "Confirm"
+    },
+    "wordAdd": {
+        "message": "Add"
+    },
+    "wordSearch": {
+        "message": "Search"
     },
     "sentenceAddTranslateSource": {
         "message": "Please add a translate source."
